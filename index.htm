@@ -6,19 +6,22 @@
         .container {
             display: grid;
             grid-template-areas:
-                "lside header header rside"
-                "lside menu widebar rside"
-                "lside menu content rside"
-                "lside tree content rside";
+                "header header"
+                "menu widebar"
+                "menu content"
+                "tree content";
             grid-template-columns: 1fr 3fr;
             gap: 5px;
             background-color: #2196F3;
             padding: 5px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .container>div {
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
+            padding: 3px;
         }
 
         .container>div.header {
@@ -50,14 +53,19 @@
             grid-area: content;
         }
 
-        h2 {
-            font-family: 'Lucida ';
-            display: inline;
-            text-align: center;
-            text-align: center;
+        div {
+            padding: 0 0 0 0;
+            margin: 0;
+        }
+
+        body{
+            background-image: url("dreamocean extended.jpeg");
+            transform: rotate(45deg);
         }
     </style>
 </head>
+
+<!-- ~◦•●◉@✿☆✿@◉●•◦~ -->
 
 <body>
 
@@ -68,13 +76,11 @@
 
     <div class="container">
         <div class="header">
-            <img src="metrographic1.jpg" />
-            <img src="titlecardtiny.jpg"/>
-            <img src="metrographic2.jpg" />
+            <img src="metrographic1.jpg" style="width:20%; height:auto" />
+            <img src="titlecard.png" style="width:56%; height:auto"/>
+            <img src="metrographic2.jpg" style="width:20%; height:auto"/>
         </div>
         <div class="menu"><a href="#">Link 1</a><br><a href="#">Link 2</a><br><a href="#">Link 3</a></div>
-        <div class="lside">~◦•●◉@✿☆✿@◉●•◦~<br/><img src="Airbrush-image-extender.png"/></div>
-        <div class="rside">~◦•●◉@✿☆✿@◉●•◦~<br/><img src="Airbrush-image-extender.png"/></div>
         <div class="widebar">
             <img src="wet.gif" />
             <img src="justdance.gif" />
